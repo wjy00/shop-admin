@@ -85,7 +85,6 @@
           <!-- options：指定数据源 -->
           <!-- props：指定配置对象 -->
           <el-cascader v-model="selectedKeys"
-                       expand-trigger="hover"
                        :options="parentCateList"
                        :props="cascaderProps"
                        @change="parentCateChanged"
@@ -190,6 +189,7 @@ export default {
       parentCateList: [],
       // 指定级联选择器的配置对象
       cascaderProps: {
+        expandTrigger: 'hover',
         value: 'cat_id',
         label: 'cat_name',
         children: 'children',
