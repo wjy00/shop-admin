@@ -45,7 +45,7 @@
                          prop="add_time"
                          width="140px">
           <!-- 调用过滤器，将时间转换成指定格式 -->
-          <template slot-scope="scope">{{scope.row.add_time | dataFormat }}</template>
+          <template slot-scope="scope">{{scope.row.add_time | dateFormat }}</template>
         </el-table-column>
         <el-table-column label="操作"
                          width="130px">
